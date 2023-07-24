@@ -1,0 +1,8 @@
+---
+version: '3'
+services:
+  price-feed-oracle:
+    build:
+      context: .
+    env_file: .env
+    restart: unless-stopped
